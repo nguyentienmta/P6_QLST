@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer: one
+  employee: one
+  bill_date: 2017-05-15 13:25:54
+  total_amount: 1
+
+two:
+  customer: two
+  employee: two
+  bill_date: 2017-05-15 13:25:54
+  total_amount: 1

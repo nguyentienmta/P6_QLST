@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :bill_details
+  resources :bills
   resources :customers
   resources :products
   resources :categories
