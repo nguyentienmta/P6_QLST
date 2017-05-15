@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170515061633) do
+ActiveRecord::Schema.define(version: 20170515062813) do
+
+  create_table "bill_details", force: :cascade do |t|
+    t.integer  "bill_id"
+    t.integer  "product_id"
+    t.integer  "price"
+    t.integer  "amount"
+    t.integer  "sale"
+    t.integer  "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bill_id"], name: "index_bill_details_on_bill_id"
+    t.index ["product_id"], name: "index_bill_details_on_product_id"
+  end
+
+  create_table "bills", force: :cascade do |t|
+    t.integer  "customer_id"
+    t.integer  "employee_id"
+    t.datetime "bill_date"
+    t.integer  "total_amount"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["customer_id"], name: "index_bills_on_customer_id"
+    t.index ["employee_id"], name: "index_bills_on_employee_id"
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"

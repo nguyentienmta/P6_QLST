@@ -1,0 +1,23 @@
+<%= simple_form_for(@bill_detail) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.association :bill %>
+
+    <%= f.association :product %>
+
+    <%= f.input :price %>
+
+    <%= f.input :amount %>
+
+    <%= f.input :sale %>
+
+    <%= f.input :total %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
