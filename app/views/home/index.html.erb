@@ -1,2 +1,94 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="row">
+  <div id="products" class="row list-group">
+    <div class="item  col-xs-3 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption">
+          <h4 class="group inner list-group-item-heading">
+            <b>Quản lý nhân viên</b></h4>
+          Quản lý thông tin nhân viên
+          <div class="row">
+            <div class="col-xs-12 col-md-6 pull-right">
+              <a class="btn btn-success  pull-right" href="<%= employees_path%>">Chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item  col-xs-3 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption">
+          <h4 class="group inner list-group-item-heading">
+            <b>Quản lý nhà cung cấp</b></h4>
+          Quản lý t.tin nhà cung cấp
+          <div class="row">
+            <div class="col-xs-12 col-md-6 pull-right">
+              <a class="btn btn-success  pull-right" href="<%= suppliers_path%>">Chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item  col-xs-3 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption">
+          <h4 class="group inner list-group-item-heading">
+            <b>Quản lý danh mục sản phầm</b></h4>
+          Quản lý danh mục sản phầm
+          <div class="row">
+            <div class="col-xs-12 col-md-6 pull-right">
+              <a class="btn btn-success pull-right" href="<%= categories_path%>">Chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item  col-xs-3 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption">
+          <h4 class="group inner list-group-item-heading">
+            <b>Quản lý sản phẩm</b></h4>
+          Quản lý sản phẩm
+          <div class="row">
+            <div class="col-xs-12 col-md-6 pull-right">
+              <a class="btn btn-success pull-right" href="<%= products_path%>">Chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div id="products" class="row list-group">
+    <div class="item  col-xs-3 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption">
+          <h4 class="group inner list-group-item-heading">
+            <b>Quản lý khách hàng</b></h4>
+          Quản lý khách hàng
+          <div class="row">
+            <div class="col-xs-12 col-md-6 pull-right">
+              <a class="btn btn-success  pull-right" href="<%= customers_path%>">Chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item  col-xs-3 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption">
+          <h4 class="group inner list-group-item-heading">
+            <b>Quản lý hóa đơn</b></h4>
+          Quản lý thông tin hóa đơn<br>
+          <div class="row">
+            <div class="col-xs-12 col-md-6 pull-right">
+              <a class="btn btn-success  pull-right" href="<%= bills_path%>">Chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
