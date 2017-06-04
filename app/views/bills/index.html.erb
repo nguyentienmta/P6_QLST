@@ -16,8 +16,8 @@
   <tbody>
     <% @bills.each do |bill| %>
       <tr>
-        <td><%= bill.customer %></td>
-        <td><%= bill.employee %></td>
+        <td><%= bill.customer.name  %></td>
+        <td><%= bill.employee.name %></td>
         <td><%= bill.bill_date %></td>
         <td><%= bill.total_amount %></td>
         <td><%= link_to 'Show', bill %></td>
